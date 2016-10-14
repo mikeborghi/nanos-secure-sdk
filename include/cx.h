@@ -1440,7 +1440,7 @@ SYSCALL int cx_ecschnorr_sign(
     cx_ecfp_private_key_t WIDE *pvkey
         PLENGTH(scc__cx_ecfp_private_key_scc__pvkey),
     int mode, cx_md_t hashID, unsigned char WIDE *msg PLENGTH(msg_len),
-    unsigned int msg_len, unsigned char *sig PLENGTH(1 + 1 + 2 * (1 + 1 + 33)));
+    unsigned int msg_len, unsigned char *sig PLENGTH(1 + 1 + 2 * (1 + 1 + 31)));
 
 /**
  * Verify a hash message signature according to ECSchnorr specification (BSI TR
